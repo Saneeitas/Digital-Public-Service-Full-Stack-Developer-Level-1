@@ -1,0 +1,17 @@
+{
+  "name": "module-06-api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node --env-file=.env server.js",
+    "check": "node --env-file=.env check-api.js",
+    "start:drill-unprotected": "node --env-file=.env server.drill-unprotected.js",
+    "start:drill-protected": "node --env-file=.env server.drill-protected.js",
+    "gate": "node --env-file=.env gate-transactions.js"
+  },
+  "dependencies": {
+    "express": "^4.22.3",
+    "pg": "^8.23.1",
+    "zod": "^3.25.76"
+  }
+}

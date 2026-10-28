@@ -1,0 +1,19 @@
+[Unit]
+Description=team1 citizen service
+After=network-online.target postgresql.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=team1
+Group=team1
+WorkingDirectory=/home/team1/app
+EnvironmentFile=/home/team1/app/.env
+ExecStart=/usr/bin/node server.js
+Restart=always
+RestartSec=1
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

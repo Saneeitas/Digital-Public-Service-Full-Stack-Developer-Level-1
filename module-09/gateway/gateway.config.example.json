@@ -1,0 +1,18 @@
+{
+  "port": 8090,
+  "upstreamTimeoutMs": 3000,
+  "logFile": "gateway-calls.log",
+  "providers": {
+    "a": { "baseUrl": "http://<team-a-vm>", "serviceToken": "<team A's SERVICE_TOKEN>" },
+    "b": { "baseUrl": "http://<team-b-vm>", "serviceToken": "<team B's SERVICE_TOKEN>" },
+    "c": { "baseUrl": "http://<team-c-vm>", "serviceToken": "<team C's SERVICE_TOKEN>" },
+    "d": { "baseUrl": "http://<team-d-vm>", "serviceToken": "<team D's SERVICE_TOKEN>" }
+  },
+  "consumers": {
+    "<gateway token for team B>": "b",
+    "<gateway token for team C>": "c",
+    "<gateway token for team D>": "d",
+    "<gateway token for team E>": "e"
+  },
+  "allowed": { "b": ["a", "d"], "c": ["a", "b"], "d": ["a"], "e": ["a", "b", "c", "d"] }
+}

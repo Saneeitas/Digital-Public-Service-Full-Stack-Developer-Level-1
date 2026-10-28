@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request a Document Copy – Training Administration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Request a Document Copy</h1>
+    <p><a href="index.html">Back to service information</a></p>
+  </header>
+
+  <main>
+    <p>Fields marked (required) must be completed. This is a fictional
+    service: use synthetic data only.</p>
+
+    <form action="#">
+      <div class="field">
+        <label for="fullName">Full name (required)</label>
+        <input type="text" id="fullName" name="fullName"
+               autocomplete="name" required>
+        <p class="error" id="fullName-error" hidden>Enter your full name.</p>
+      </div>
+
+      <div class="field">
+        <label for="citizenId">Citizen ID (required)</label>
+        <p class="hint" id="citizenId-hint">CIT- followed by eight digits,
+        for example CIT-12345678</p>
+        <input type="text" id="citizenId" name="citizenId"
+               aria-describedby="citizenId-hint" required>
+        <p class="error" id="citizenId-error" hidden>Enter a Citizen ID in
+        the format CIT- followed by eight digits.</p>
+      </div>
+
+      <div class="field">
+        <label for="dateOfBirth">Date of birth (required)</label>
+        <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+        <p class="error" id="dateOfBirth-error" hidden>Enter a valid date of
+        birth.</p>
+      </div>
+
+      <fieldset>
+        <legend>Preferred contact method (required)</legend>
+        <div class="option">
+          <input type="radio" id="contactEmail" name="preferredContact"
+                 value="email" required>
+          <label for="contactEmail">Email</label>
+        </div>
+        <div class="option">
+          <input type="radio" id="contactPhone" name="preferredContact"
+                 value="phone">
+          <label for="contactPhone">Phone</label>
+        </div>
+        <div class="option">
+          <input type="radio" id="contactPost" name="preferredContact"
+                 value="post">
+          <label for="contactPost">Post</label>
+        </div>
+        <p class="error" id="preferredContact-error" hidden>Choose one
+        contact method.</p>
+      </fieldset>
+
+      <div class="field">
+        <label for="details">Additional details (optional)</label>
+        <textarea id="details" name="details" rows="4"></textarea>
+      </div>
+
+      <button type="submit">Submit request</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>Training material. All names, numbers and records are synthetic.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "module-07-vulnerable-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ISOLATED TRAINING PORTAL WITH SIX SEEDED FLAWS. Never deploy it, never expose it.",
+  "scripts": {
+    "start": "node --env-file=.env server.js",
+    "check": "node --env-file=.env check-flaws.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "express": "^4.22.3",
+    "jsonwebtoken": "^9.0.3",
+    "pg": "^8.23.1"
+  }
+}

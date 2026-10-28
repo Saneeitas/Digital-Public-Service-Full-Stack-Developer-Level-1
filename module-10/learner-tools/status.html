@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My service statuses</title>
+</head>
+<body>
+  <main>
+    <h1>My service statuses</h1>
+    <form id="login">
+      <p>
+        <label for="citizenId">Citizen ID</label><br>
+        <input id="citizenId" name="citizenId" autocomplete="username" required>
+      </p>
+      <p>
+        <label for="password">Password</label><br>
+        <input id="password" name="password" type="password"
+               autocomplete="current-password" required>
+      </p>
+      <button type="submit">Show my statuses</button>
+    </form>
+    <p id="message" role="status"></p>
+    <ul id="statuses"></ul>
+  </main>
+  <script src="status.js"></script>
+</body>
+</html>

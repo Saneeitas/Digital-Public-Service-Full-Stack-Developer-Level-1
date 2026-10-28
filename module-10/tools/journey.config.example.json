@@ -1,0 +1,18 @@
+{
+  "services": {
+    "a": "http://<team-a-address>",
+    "b": "http://<team-b-address>",
+    "c": "http://<team-c-address>",
+    "d": "http://<team-d-address>",
+    "e": "http://<team-e-address>"
+  },
+  "serviceNames": {
+    "a": "Registry",
+    "b": "Education",
+    "c": "Social Services",
+    "d": "Health"
+  },
+  "citizenPassword": "journey-pass-123456",
+  "evidenceDir": "evidence",
+  "gatewayLog": "/path/to/gateway-calls.log"
+}

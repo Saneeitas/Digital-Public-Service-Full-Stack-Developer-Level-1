@@ -1,0 +1,15 @@
+{
+  "team": "B",
+  "teamScores": {
+    "interoperability": 20,
+    "security": 11,
+    "dataIntegrity": 8,
+    "accessibility": 8,
+    "codeApi": 7,
+    "deployment": 4
+  },
+  "members": {
+    "Member 1": 19,
+    "Member 2": 16
+  }
+}

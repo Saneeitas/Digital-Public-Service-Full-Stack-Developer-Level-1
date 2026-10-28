@@ -1,0 +1,14 @@
+# Secrets: never commit these. Only .env.example files belong in the repository.
+.env
+.env.*
+!.env.example
+
+# Installed packages and generated output
+node_modules/
+evidence/
+.local-stack/
+*.log
+
+# Computer clutter
+.DS_Store
+Thumbs.db
